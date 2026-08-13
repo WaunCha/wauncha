@@ -2,11 +2,7 @@
   <img src="blackwall.svg" width="100%" alt="WAUN"/>
 </div>
 
-<table align="right"><tr><td>
-  <img src="johnny-gif.gif" width="200" alt=""/>
-  <br/>
-  <img src="vampire.gif" width="200" alt=""/>
-</td></tr></table>
+<img src="johnny-gif.gif" width="230" align="right" alt=""/>
 
 <img src="terminal.svg" width="620" alt="whoami"/>
 
@@ -37,6 +33,8 @@
 <a href="https://linkedin.com/in/__LINKEDIN__"><img src="https://img.shields.io/badge/linkedin-0D0002?style=flat-square&logo=linkedin&logoColor=FF0033&labelColor=0D0002"/></a>
 <a href="https://app.hackthebox.com/profile/__HTB_ID__"><img src="https://img.shields.io/badge/hack_the_box-0D0002?style=flat-square&logo=hackthebox&logoColor=FF0033&labelColor=0D0002"/></a>
 <a href="mailto:__MAIL__"><img src="https://img.shields.io/badge/mail-0D0002?style=flat-square&logo=protonmail&logoColor=FF0033&labelColor=0D0002"/></a>
+
+<img src="vampire.gif" width="300" alt=""/>
 
 <img src="quote.svg" width="560" alt="never fade away"/>
 
