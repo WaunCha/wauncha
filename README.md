@@ -32,7 +32,7 @@
 <sub><code>&gt; ping waun</code></sub>
 
 <a href="https://linkedin.com/in/youssef-chalghoumi"><img src="https://img.shields.io/badge/linkedin-0D0002?style=flat-square&logo=linkedin&logoColor=FF0033&labelColor=0D0002"/></a>
-<a href="https://app.hackthebox.com/profile/1280790"><img src="https://img.shields.io/badge/hack_the_box-0D0002?style=flat-square&logo=hackthebox&logoColor=FF0033&labelColor=0D0002"/></a>
+<a href="https://app.hackthebox.com/public/users/1280790"><img src="https://img.shields.io/badge/hack_the_box-0D0002?style=flat-square&logo=hackthebox&logoColor=FF0033&labelColor=0D0002"/></a>
 <a href="mailto:chalghoumiyoussef@gmail.com"><img src="https://img.shields.io/badge/mail-0D0002?style=flat-square&logo=protonmail&logoColor=FF0033&labelColor=0D0002"/></a>
 
 <img src="quote.svg" width="560" alt="never fade away"/> </div>
