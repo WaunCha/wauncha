@@ -1,0 +1,236 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 200" width="820" height="200" role="img" aria-label="WAUN">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="58%" r="78%">
+      <stop offset="0%" stop-color="#2b0008"/>
+      <stop offset="52%" stop-color="#0d0002"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="drip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff0033" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#ff0033" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#ffd0d8" stop-opacity="1"/>
+    </linearGradient>
+    <pattern id="wall" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#ff0033" stroke-width="0.5" opacity="0.13"/>
+      <path d="M0 10H20" fill="none" stroke="#ff0033" stroke-width="0.5" opacity="0.06"/>
+    </pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1.5" fill="#000" opacity="0.45"/>
+    </pattern>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="3.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .mono { font-family:"JetBrains Mono","SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+      .word { font-size:74px; font-weight:700; letter-spacing:15px; }
+      .sub  { font-size:14px; letter-spacing:4.5px; fill:#ff7d8f; opacity:.75; }
+      .tag  { font-size:11px; letter-spacing:3px; fill:#ff0033; opacity:.8; }
+
+      @keyframes gA {0%,86%,100%{transform:translate(0,0);opacity:.8}88%{transform:translate(-6px,2px);opacity:1}91%{transform:translate(5px,-3px);opacity:1}95%{transform:translate(-2px,1px);opacity:.9}}
+      @keyframes gB {0%,86%,100%{transform:translate(0,0);opacity:.5}88%{transform:translate(6px,-2px);opacity:.95}91%{transform:translate(-5px,3px);opacity:.95}95%{transform:translate(2px,-1px);opacity:.7}}
+      @keyframes flick {0%,100%{opacity:1}87%{opacity:.45}88%{opacity:1}93%{opacity:.65}94%{opacity:1}}
+      @keyframes hover {0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      @keyframes blink {0%,49%{opacity:1}50%,100%{opacity:0}}
+      @keyframes fall {0%{transform:translateY(0)}100%{transform:translateY(280px)}}
+      @keyframes breathe {0%,100%{opacity:.28}50%{opacity:.7}}
+      @keyframes wallpulse {0%,100%{opacity:.55}50%{opacity:1}}
+
+      .ghostA{animation:gA 6s infinite steps(1,end)}
+      .ghostB{animation:gB 6s infinite steps(1,end)}
+      .main  {animation:flick 6s infinite}
+      .inv   {animation:hover 2.8s ease-in-out infinite}
+      .cur   {animation:blink 1s steps(1,end) infinite}
+      .rain  {animation-name:fall;animation-timing-function:linear;animation-iteration-count:infinite}
+      .edge  {animation:breathe 3.4s ease-in-out infinite}
+      .barrier{animation:wallpulse 2.2s ease-in-out infinite}
+      @media (prefers-reduced-motion:reduce){
+        .ghostA,.ghostB,.main,.inv,.cur,.rain,.edge,.barrier{animation:none}
+      }
+    </style>
+  </defs>
+
+  <rect width="820" height="200" fill="url(#bg)"/>
+  <rect width="820" height="200" fill="url(#wall)"/>
+  <rect class="rain" x="70" y="-54" width="2" height="54" fill="url(#drip)" opacity="0.55" style="animation-duration:3.1s;animation-delay:-0.0s"/>
+  <rect class="rain" x="122" y="-38" width="2" height="38" fill="url(#drip)" opacity="0.4" style="animation-duration:4.4s;animation-delay:-1.2s"/>
+  <rect class="rain" x="268" y="-66" width="2" height="66" fill="url(#drip)" opacity="0.5" style="animation-duration:2.7s;animation-delay:-0.6s"/>
+  <rect class="rain" x="352" y="-44" width="2" height="44" fill="url(#drip)" opacity="0.35" style="animation-duration:3.8s;animation-delay:-2.1s"/>
+  <rect class="rain" x="437" y="-58" width="2" height="58" fill="url(#drip)" opacity="0.45" style="animation-duration:3.3s;animation-delay:-0.3s"/>
+  <rect class="rain" x="516" y="-34" width="2" height="34" fill="url(#drip)" opacity="0.3" style="animation-duration:4.9s;animation-delay:-1.7s"/>
+  <rect class="rain" x="598" y="-70" width="2" height="70" fill="url(#drip)" opacity="0.5" style="animation-duration:2.9s;animation-delay:-1.0s"/>
+  <rect class="rain" x="676" y="-42" width="2" height="42" fill="url(#drip)" opacity="0.35" style="animation-duration:4.1s;animation-delay:-2.4s"/>
+  <rect class="rain" x="752" y="-56" width="2" height="56" fill="url(#drip)" opacity="0.45" style="animation-duration:3.5s;animation-delay:-0.8s"/>
+  <rect class="rain" x="208" y="-30" width="2" height="30" fill="url(#drip)" opacity="0.28" style="animation-duration:5.2s;animation-delay:-3.0s"/>
+  <rect class="rain" x="792" y="-48" width="2" height="48" fill="url(#drip)" opacity="0.38" style="animation-duration:3.0s;animation-delay:-1.5s"/>
+  
+  <g class="barrier" filter="url(#softglow)">
+    <rect x="0" y="196" width="820" height="2" fill="#ff0033" opacity=".85"/>
+    <rect x="0" y="2"   width="820" height="1" fill="#ff0033" opacity=".5"/>
+  </g>
+
+  <g class="inv">
+    <g fill="#8b0010" opacity=".7" transform="translate(-3,0)">
+      <rect x="64" y="58" width="9" height="9"/>
+      <rect x="118" y="58" width="9" height="9"/>
+      <rect x="73" y="67" width="9" height="9"/>
+      <rect x="109" y="67" width="9" height="9"/>
+      <rect x="64" y="76" width="9" height="9"/>
+      <rect x="73" y="76" width="9" height="9"/>
+      <rect x="82" y="76" width="9" height="9"/>
+      <rect x="91" y="76" width="9" height="9"/>
+      <rect x="100" y="76" width="9" height="9"/>
+      <rect x="109" y="76" width="9" height="9"/>
+      <rect x="118" y="76" width="9" height="9"/>
+      <rect x="55" y="85" width="9" height="9"/>
+      <rect x="64" y="85" width="9" height="9"/>
+      <rect x="82" y="85" width="9" height="9"/>
+      <rect x="91" y="85" width="9" height="9"/>
+      <rect x="100" y="85" width="9" height="9"/>
+      <rect x="118" y="85" width="9" height="9"/>
+      <rect x="127" y="85" width="9" height="9"/>
+      <rect x="46" y="94" width="9" height="9"/>
+      <rect x="55" y="94" width="9" height="9"/>
+      <rect x="64" y="94" width="9" height="9"/>
+      <rect x="73" y="94" width="9" height="9"/>
+      <rect x="82" y="94" width="9" height="9"/>
+      <rect x="91" y="94" width="9" height="9"/>
+      <rect x="100" y="94" width="9" height="9"/>
+      <rect x="109" y="94" width="9" height="9"/>
+      <rect x="118" y="94" width="9" height="9"/>
+      <rect x="127" y="94" width="9" height="9"/>
+      <rect x="136" y="94" width="9" height="9"/>
+      <rect x="46" y="103" width="9" height="9"/>
+      <rect x="64" y="103" width="9" height="9"/>
+      <rect x="73" y="103" width="9" height="9"/>
+      <rect x="82" y="103" width="9" height="9"/>
+      <rect x="91" y="103" width="9" height="9"/>
+      <rect x="100" y="103" width="9" height="9"/>
+      <rect x="109" y="103" width="9" height="9"/>
+      <rect x="118" y="103" width="9" height="9"/>
+      <rect x="136" y="103" width="9" height="9"/>
+      <rect x="46" y="112" width="9" height="9"/>
+      <rect x="64" y="112" width="9" height="9"/>
+      <rect x="118" y="112" width="9" height="9"/>
+      <rect x="136" y="112" width="9" height="9"/>
+      <rect x="73" y="121" width="9" height="9"/>
+      <rect x="82" y="121" width="9" height="9"/>
+      <rect x="100" y="121" width="9" height="9"/>
+      <rect x="109" y="121" width="9" height="9"/>
+    </g>
+    <g fill="#ff0033" opacity=".7" transform="translate(3,0)">
+      <rect x="64" y="58" width="9" height="9"/>
+      <rect x="118" y="58" width="9" height="9"/>
+      <rect x="73" y="67" width="9" height="9"/>
+      <rect x="109" y="67" width="9" height="9"/>
+      <rect x="64" y="76" width="9" height="9"/>
+      <rect x="73" y="76" width="9" height="9"/>
+      <rect x="82" y="76" width="9" height="9"/>
+      <rect x="91" y="76" width="9" height="9"/>
+      <rect x="100" y="76" width="9" height="9"/>
+      <rect x="109" y="76" width="9" height="9"/>
+      <rect x="118" y="76" width="9" height="9"/>
+      <rect x="55" y="85" width="9" height="9"/>
+      <rect x="64" y="85" width="9" height="9"/>
+      <rect x="82" y="85" width="9" height="9"/>
+      <rect x="91" y="85" width="9" height="9"/>
+      <rect x="100" y="85" width="9" height="9"/>
+      <rect x="118" y="85" width="9" height="9"/>
+      <rect x="127" y="85" width="9" height="9"/>
+      <rect x="46" y="94" width="9" height="9"/>
+      <rect x="55" y="94" width="9" height="9"/>
+      <rect x="64" y="94" width="9" height="9"/>
+      <rect x="73" y="94" width="9" height="9"/>
+      <rect x="82" y="94" width="9" height="9"/>
+      <rect x="91" y="94" width="9" height="9"/>
+      <rect x="100" y="94" width="9" height="9"/>
+      <rect x="109" y="94" width="9" height="9"/>
+      <rect x="118" y="94" width="9" height="9"/>
+      <rect x="127" y="94" width="9" height="9"/>
+      <rect x="136" y="94" width="9" height="9"/>
+      <rect x="46" y="103" width="9" height="9"/>
+      <rect x="64" y="103" width="9" height="9"/>
+      <rect x="73" y="103" width="9" height="9"/>
+      <rect x="82" y="103" width="9" height="9"/>
+      <rect x="91" y="103" width="9" height="9"/>
+      <rect x="100" y="103" width="9" height="9"/>
+      <rect x="109" y="103" width="9" height="9"/>
+      <rect x="118" y="103" width="9" height="9"/>
+      <rect x="136" y="103" width="9" height="9"/>
+      <rect x="46" y="112" width="9" height="9"/>
+      <rect x="64" y="112" width="9" height="9"/>
+      <rect x="118" y="112" width="9" height="9"/>
+      <rect x="136" y="112" width="9" height="9"/>
+      <rect x="73" y="121" width="9" height="9"/>
+      <rect x="82" y="121" width="9" height="9"/>
+      <rect x="100" y="121" width="9" height="9"/>
+      <rect x="109" y="121" width="9" height="9"/>
+    </g>
+    <g fill="#ff5566" filter="url(#glow)">
+      <rect x="64" y="58" width="9" height="9"/>
+      <rect x="118" y="58" width="9" height="9"/>
+      <rect x="73" y="67" width="9" height="9"/>
+      <rect x="109" y="67" width="9" height="9"/>
+      <rect x="64" y="76" width="9" height="9"/>
+      <rect x="73" y="76" width="9" height="9"/>
+      <rect x="82" y="76" width="9" height="9"/>
+      <rect x="91" y="76" width="9" height="9"/>
+      <rect x="100" y="76" width="9" height="9"/>
+      <rect x="109" y="76" width="9" height="9"/>
+      <rect x="118" y="76" width="9" height="9"/>
+      <rect x="55" y="85" width="9" height="9"/>
+      <rect x="64" y="85" width="9" height="9"/>
+      <rect x="82" y="85" width="9" height="9"/>
+      <rect x="91" y="85" width="9" height="9"/>
+      <rect x="100" y="85" width="9" height="9"/>
+      <rect x="118" y="85" width="9" height="9"/>
+      <rect x="127" y="85" width="9" height="9"/>
+      <rect x="46" y="94" width="9" height="9"/>
+      <rect x="55" y="94" width="9" height="9"/>
+      <rect x="64" y="94" width="9" height="9"/>
+      <rect x="73" y="94" width="9" height="9"/>
+      <rect x="82" y="94" width="9" height="9"/>
+      <rect x="91" y="94" width="9" height="9"/>
+      <rect x="100" y="94" width="9" height="9"/>
+      <rect x="109" y="94" width="9" height="9"/>
+      <rect x="118" y="94" width="9" height="9"/>
+      <rect x="127" y="94" width="9" height="9"/>
+      <rect x="136" y="94" width="9" height="9"/>
+      <rect x="46" y="103" width="9" height="9"/>
+      <rect x="64" y="103" width="9" height="9"/>
+      <rect x="73" y="103" width="9" height="9"/>
+      <rect x="82" y="103" width="9" height="9"/>
+      <rect x="91" y="103" width="9" height="9"/>
+      <rect x="100" y="103" width="9" height="9"/>
+      <rect x="109" y="103" width="9" height="9"/>
+      <rect x="118" y="103" width="9" height="9"/>
+      <rect x="136" y="103" width="9" height="9"/>
+      <rect x="46" y="112" width="9" height="9"/>
+      <rect x="64" y="112" width="9" height="9"/>
+      <rect x="118" y="112" width="9" height="9"/>
+      <rect x="136" y="112" width="9" height="9"/>
+      <rect x="73" y="121" width="9" height="9"/>
+      <rect x="82" y="121" width="9" height="9"/>
+      <rect x="100" y="121" width="9" height="9"/>
+      <rect x="109" y="121" width="9" height="9"/>
+    </g>
+  </g>
+
+  <g class="mono">
+    <text class="word ghostA" x="196" y="112" fill="#8b0010">WAUN</text>
+    <text class="word ghostB" x="196" y="112" fill="#ffffff" opacity=".5">WAUN</text>
+    <text class="word main"   x="196" y="112" fill="#ff0033" filter="url(#glow)">WAUN</text>
+    <text class="sub"  x="200" y="146">cloud security // offensive spirit</text>
+    <rect class="cur" x="646" y="134" width="9" height="14" fill="#ff0033"/>
+    <text class="tag" x="200" y="42">[ BLACKWALL :: ICE ACTIVE ]</text>
+    <text class="tag" x="700" y="42" text-anchor="end">TN // 36.8N 10.1E</text>
+  </g>
+
+  <rect width="820" height="200" fill="url(#scan)"/>
+  <rect class="edge" x="1" y="1" width="818" height="198" fill="none" stroke="#ff0033" stroke-width="1.5"/>
+  <path d="M0 0h34M0 0v34M820 200h-34M820 200v-34" stroke="#ff0033" stroke-width="3" fill="none"/>
+</svg>
