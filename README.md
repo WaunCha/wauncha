@@ -1,15 +1,4 @@
-<div align="center">
-  <img src="blackwall.svg" width="100%" alt="WAUN"/>
-</div>
-
-<p align="left">
-  <img src="terminal.svg" width="620" alt="whoami"/>
-  <img src="johnny-gif.gif" width="200" align="right" alt=""/>
-</p>
-
-<br clear="all"/>
-
-<div align="center">
+<div align="center"> <img src="blackwall.svg" width="100%" alt="WAUN"/> </div> <p align="left"> <img src="terminal.svg" width="620" alt="whoami"/> <img src="johnny-gif.gif" width="200" align="right" alt=""/> </p> <p align="right"> <img src="vampire.gif" width="200" alt=""/> </p> <br clear="all"/> <div align="center">
 
 <sub><code>&gt; cat stack.txt</code></sub>
 
