@@ -2,9 +2,10 @@
   <img src="blackwall.svg" width="100%" alt="WAUN"/>
 </div>
 
-<img src="johnny-gif.gif" width="230" align="right" alt=""/>
-
-<img src="terminal.svg" width="620" alt="whoami"/>
+<p align="left">
+  <img src="terminal.svg" width="620" alt="whoami"/>
+  <img src="johnny-gif.gif" width="230" align="right" alt=""/>
+</p>
 
 <br clear="all"/>
 
